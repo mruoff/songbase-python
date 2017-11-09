@@ -1,0 +1,21 @@
+{% extends "homebase.html" %}
+
+{% block title %}
+Users
+{% endblock %}
+
+{% block page_content%}
+    {#this is a jinja comment...lol wtf is jinja???#}
+    {% if user_name == "meghan" %}
+    <h1> hello, megga!</h1>
+    {% else %}
+    <h2>Hello, {{user_name}}</h2>
+    {% endif %}
+{% endblock %}
+{% block heading_one %}
+<style>
+h1 {
+  color:yellow;
+}
+</style>
+{% endblock %}

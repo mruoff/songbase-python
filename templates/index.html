@@ -1,0 +1,18 @@
+{% extends "homebase.html" %}
+
+{{super()}}
+
+{% block title %}
+Homepage
+{% endblock %}
+{% block page_content%}
+<h1> This is the Index with a template reused page for the songbase.py</h1>
+{% endblock %}
+
+{% block heading_one %}
+<style>
+h1 {
+  color:green;
+}
+</style>
+{% endblock %}

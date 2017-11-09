@@ -1,0 +1,23 @@
+{% extends "homebase.html" %}
+
+{% block title %}
+Songs
+{% endblock %}
+
+{% block page_content%}
+
+<h1> This is the Songs list:</h1>
+<ul>
+{% for song in songs %}
+    <li>{{song}}</li>
+{% endfor %}
+<img src="{{ url_for('static', filename= 'img/googlegif.gif')}}" alt="Google Logo">
+</ul>
+{% endblock %}
+{% block heading_one %}
+<style>
+h1 {
+  color:blue;
+}
+</style>
+{% endblock %}

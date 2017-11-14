@@ -11,7 +11,7 @@ Songs
 {% for song in songs %}
     <li>{{song}}</li>
 {% endfor %}
-<img src="{{ url_for('static', filename= 'img/googlegif.gif')}}" alt="Google Logo">
+<img src="{{url_for('static', filename= 'img/googlegif.gif')}}" alt="Google Logo">
 </ul>
 {% endblock %}
 {% block heading_one %}
